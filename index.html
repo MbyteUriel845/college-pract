@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources</title>
+    <style>
+      .link {
+        text-decoration: none;
+        color: #2d3580;
+        font-weight: 500;
+      }
+      .header {
+        z-index: 999;
+        /* position: fixed; */
+        background-color: white;
+        margin-bottom: 30px;
+        width: 100%;
+        opacity: 100%;
+        height: 70px;
+        padding: 0 20px;
+         box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25); 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 350px) {
+        .links {
+          display: none !important;
+        }
+        .header {
+          justify-content: center
+        }
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
